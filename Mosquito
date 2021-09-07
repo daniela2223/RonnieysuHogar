@@ -1,0 +1,28 @@
+import java.awt.Graphics;
+import javax.swing.ImageIcon;
+import java.awt.Image;
+
+public class Mosquito extends Enemigos {
+	Image Mosquito;
+	public int x1=30;
+	public int y1=540;
+	public int x2 = 450;
+	public int y2 = 90;
+	public int x3 = 30;
+	public int y3 = 150;
+	public int arriba1= 30;
+	public int arriba2 = 90;
+	public int arriba3 = 60;
+	
+	public void paint(Graphics grafico) {
+		cargarImag();
+		grafico.drawImage(Mosquito, x1, y1, ancho, alto, null);
+		grafico.drawImage(Mosquito, x2, y2, ancho, alto, null);
+		grafico.drawImage(Mosquito, x3, y3, ancho, alto, null);
+		movimientomosquito();
+	}
+
+	private void cargarImag() {
+		Mosquito = new ImageIcon("src\\Imagenes\\Mosquito.gif").getImage();
+	}
+}
