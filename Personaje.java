@@ -36,8 +36,8 @@ public void teclaPresionada(KeyEvent evento){
 	    int [][]laberinto=lab.obtieneLaberinto();
 	  
 		Rectangle r = new Rectangle(x,y,anchoRect,alto);
-	    Rectangle r1 = new Rectangle(araña.x1,araña.y1,anchoRect,alto);
-	    Rectangle r3= new Rectangle(araña.x2, araña.y2, anchoRect, alto);
+	    	Rectangle r1 = new Rectangle(araña.x1,araña.y1,anchoRect,alto);
+	    	Rectangle r3= new Rectangle(araña.x2, araña.y2, anchoRect, alto);
 		Rectangle r4 = new Rectangle(araña.x3, araña.y3, anchoRect, alto);
 		
 		Rectangle r5 = new Rectangle(mosquito.x1, mosquito.y1, anchoRect, alto);
@@ -50,7 +50,7 @@ public void teclaPresionada(KeyEvent evento){
 		Rectangle r10 = new Rectangle(bat.x1, bat.y1, anchoRect, alto);
 		Rectangle r11 = new Rectangle(bat.x2, bat.y2, anchoRect, alto);
 		
-	  agregarDisparo(direccion);
+	 	agregarDisparo(direccion);
 		Rectangle r2 = disparo.getLimites();
 
 	    if(evento.getKeyCode()==37){ 
