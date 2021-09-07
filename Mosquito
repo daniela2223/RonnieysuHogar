@@ -25,4 +25,40 @@ public class Mosquito extends Enemigos {
 	private void cargarImag() {
 		Mosquito = new ImageIcon("src\\Imagenes\\Mosquito.gif").getImage();
 	}
+	public void movimientomosquito() {
+		if (Juego.contadormosquito==0) {
+			if (arriba1<610) {
+				x1 = x1+30;
+				arriba1 = arriba1+30;
+			}else {
+					arriba1+=30;
+					x1 = x1-30;
+					if (x1==30) {
+						arriba1 = 30;
+					}
+			}
+			if (arriba3<180) {
+				x3 = x3+30;
+				arriba3 = arriba3+30;
+			}else {
+					arriba3+=30;
+					x3 = x3-30;
+					if (x3==30) {
+						arriba3 = 30;
+					}
+			}
+			if (arriba2<300) {
+				y2 = y2+30;
+				arriba2 = arriba2+30;
+			}else {
+					arriba2+=30;
+					y2 = y2-30;
+					if (y2==90) {
+						arriba2 = 90;
+					}
+			}
+			
+		}
+	                
+	}
 }
