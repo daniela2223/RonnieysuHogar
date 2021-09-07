@@ -26,6 +26,23 @@ static int contadormosquito = 16;
 static int contadorbat = 15;
 static int contadorcaracol = 30;
 	
+public Juego(){
+	
+    addKeyListener(new KeyListener(){
+      @Override
+      public void keyTyped(KeyEvent e){
+      }
+      @Override 
+      public void keyPressed(KeyEvent e){
+        personaje.teclaPresionada(e);
+      }
+      @Override
+      public void keyReleased(KeyEvent e){
+      }
+    });
+    setFocusable(true);
+  }
+	
 public void paint(Graphics grafico){
         laberinto.paint(grafico);
 	personaje.paint(grafico);
