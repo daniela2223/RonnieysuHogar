@@ -25,7 +25,6 @@ public class Juego extends JPanel {
 static int prueba = 4;
 static int p = 0;
 static int tiempo=200;
-static int tiempo=200;
 static int contadoraraña = 10;
 static int contadormosquito = 16;
 static int contadorbat = 15;
