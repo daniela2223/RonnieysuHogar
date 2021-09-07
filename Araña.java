@@ -21,4 +21,39 @@ public class Araña extends Enemigos {
   private void cargarImag() {
 		Araña = new ImageIcon("src\\Imagenes\\Araña.gif").getImage();
 	}
+public void movimientoarañas() {
+		if (Juego.contadoraraña==0) {
+			if (arriba1>270) {
+				y1 = y1-30;
+				arriba1 = arriba1-30;
+			}else {
+					arriba1-=30;
+					y1 = y1+30;
+					if (y1==540) {
+						arriba1 = 540;
+					}
+			}
+			if (arriba2<570) {
+				x2 = x2+30;
+				arriba2 = arriba2+30;
+			}else {
+					arriba2+=30;
+					x2 = x2-30;
+					if (x2==30) {
+						arriba2 = 30;
+					}
+			}
+			if (arriba3>90) {
+				y3 = y3-30;
+				arriba3 = arriba3-30;
+			}else {
+					arriba3-=30;
+					y3 = y3+30;
+					if (y3==480) {
+						arriba3 = 480;
+					}
+			}
+		
+		}			
+        }
 }
