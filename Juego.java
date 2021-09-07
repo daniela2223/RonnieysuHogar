@@ -14,6 +14,7 @@ Personaje personaje = new Personaje();
 Araña araña = new Araña();
 Bat bat = new Bat();
 Caracol caracol = new Caracol();
+static int tiempo=200;
 	
 public void paint(Graphics grafico){
         laberinto.paint(grafico);
@@ -38,6 +39,10 @@ public void paint(Graphics grafico){
      while(true){
       try {
         Thread.sleep(10);
+	if ((tiempo!=0)&&(p==1)) {
+        	tiempo-=1;
+        }else {
+        	tiempo = 200;
         } catch (InterruptedException ex) {
 				}
     	  
