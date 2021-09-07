@@ -4,6 +4,15 @@ import java.awt.Image;
 
 public class Personaje  {
   Image Ronnie;
+  static int aux=0; 
+  static int estr = 0;
+  static int estr1 = 0;
+  static int estr2 = 0;
+  static int estr3 = 0;
+  static int estr4 = 0;
+  static int estr5 = 0;
+  static int estr6 = 0;
+  Estrella estrella = new Estrella();
 }
 
 public void paint(Graphics graf){
