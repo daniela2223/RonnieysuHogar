@@ -11,8 +11,8 @@ import javax.swing.border.EmptyBorder;
 public class Instrucciones {
 public Instrucciones() {
 	JFrame ventana5 = new JFrame();
-  JPanel panel5 = new JPanel();
-  panel5.setBorder(new EmptyBorder(5, 5, 5, 5));
+  	JPanel panel5 = new JPanel();
+  	panel5.setBorder(new EmptyBorder(5, 5, 5, 5));
 	panel5.setLayout(null);
 	ventana5.setSize(900,640);
 	ventana5.setLocation(300,200);
