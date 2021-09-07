@@ -12,6 +12,7 @@ public class Personaje  {
   private final int alto = 30;
   private final int anchoRect = 30;
   private final int movimiento=30;
+  static int vida = 100;
   static int aux=0; 
   static int estr = 0;
   static int estr1 = 0;
@@ -21,11 +22,22 @@ public class Personaje  {
   static int estr5 = 0;
   static int estr6 = 0;
   char direccion='r';
+  Araña araña= new Araña();
+  Mosquito mosquito = new Mosquito();
+  Caracol caracol = new Caracol();
+  Bat bat = new Bat();
+  Estrella estrella = new Estrella();
   Disparo disparo;
   public int coordX;
   public int coordY;
-  Estrella estrella = new Estrella();
-}
+  Objetos objeto = new Objetos();
+  static int nota1;
+  static int nota2=0;
+  static int nota3=0;
+  
+  public void sumarester() {
+	  estr = estr1 + estr2 + estr3 + estr4 + estr5 + estr6;
+  }
 
 public void paint(Graphics graf){
     cargarImag(direccion);
@@ -208,6 +220,23 @@ public void teclaPresionada(KeyEvent evento){
 	    }
 	    }
 
+public void morir() {
+		if ((vida==0)||(Barras.tiempo1==0)) {
+			x=750;
+			y = 270;
+		    direccion='r';
+			cargarImag(direccion);
+			vida = 100;
+			Barras.tiempo1=100;
+			estr1 =0;
+			estr2 =0;
+			estr3 =0;
+			estr4 =0;
+			estr5 =0;
+			estr6 =0;
+		}
+}
+	
 public void colision() {
 	araña.movimientoarañas();
 	mosquito.movimientomosquito();
