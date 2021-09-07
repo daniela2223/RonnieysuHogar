@@ -19,6 +19,7 @@ public class Araña extends Enemigos {
 		grafico.drawImage(Araña, x1, y1, ancho, alto, null);
 		grafico.drawImage(Araña, x2, y2, ancho, alto, null);
 		grafico.drawImage(Araña, x3, y3, ancho, alto, null);
+	        movimientoarañas();
 
 	}
   private void cargarImag() {
