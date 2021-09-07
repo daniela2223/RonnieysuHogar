@@ -16,6 +16,11 @@ Bat bat = new Bat();
 Caracol caracol = new Caracol();
 Objetos reloj = new Objetos();
 static int tiempo=200;
+static int tiempo=200;
+static int contadoraraña = 10;
+static int contadormosquito = 16;
+static int contadorbat = 15;
+static int contadorcaracol = 30;
 	
 public void paint(Graphics grafico){
         laberinto.paint(grafico);
@@ -44,6 +49,27 @@ public void paint(Graphics grafico){
         	tiempo-=1;
         }else {
         	tiempo = 200;
+	}
+	if (contadoraraña!=0) {
+        	contadoraraña-=1;
+        }else {
+        	contadoraraña = 10;
+        }
+        if (contadormosquito!=0) {
+        	contadormosquito-=1;
+        }else {
+        	contadormosquito = 16;
+        }
+        if (contadorbat!=0) {
+        	contadorbat-=1;
+        }else {
+        	contadorbat = 15;
+        }
+        if (contadorcaracol!=0) {
+        	contadorcaracol-=1;
+        }else {
+        	contadorcaracol = 30;
+        }
         } catch (InterruptedException ex) {
 				}
     	  
