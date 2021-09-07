@@ -10,6 +10,9 @@ public class Araña extends Enemigos {
 	public int y2=30;
 	public int x3=240;
 	public int y3=480;
+	public int arriba1 = 540;
+	public int arriba2 = 30;
+	public int arriba3 =480;
 
   public void paint(Graphics grafico) {
 		cargarImag();
