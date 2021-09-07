@@ -65,6 +65,22 @@ public void paint(Graphics grafico){
     miventana.setResizable(false);
     miventana.setLocationRelativeTo(null);
     miventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    if (prueba ==4) {
+    	new Nota();
+    }
+    prueba =3;
+	if (prueba == 3) {
+		new Ventana3();
+	}
+	
+	if (prueba ==2) {
+		new Ventana2();
+	}
+	prueba =0;
+    if (prueba==0) {
+    	new Ventanas();
+    }
+	 
      while(true){
       try {
         Thread.sleep(10);
