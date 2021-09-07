@@ -28,8 +28,12 @@ public class Personaje  {
 }
 
 public void paint(Graphics graf){
-	cargarImag();
+    cargarImag(direccion);
     graf.drawImage(Ronnie, x, y, ancho, alto, null);
+    colision();
+    agregarDisparo(direccion);
+    sumarester();
+    morir();
   }
 
 public void teclaPresionada(KeyEvent evento){
@@ -344,14 +348,22 @@ public Disparo agregarDisparo(char direccionr) {
 
 }
 
-private Image cargarImag() {
+private Image cargarImag(char direccionr) {
 
+	switch (direccion) {
+	case 'r':
 	  Ronnie = new ImageIcon("src\\Imagenes\\Ronniepeqder.png").getImage();
-
+	  break;
+	case 'l':
 	  Ronnie = new ImageIcon("src\\Imagenes\\Ronniepeq.png").getImage();
-
+	  break;
+	case 'd':
 	  Ronnie = new ImageIcon("src\\Imagenes\\Ronniepeqab.png").getImage();
-
+	  break;
+	case 'u':
 	  Ronnie = new ImageIcon("src\\Imagenes\\Ronniepeqar.png").getImage();
+	  break;
 	}
+	return Ronnie;
+}
 }
