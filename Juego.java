@@ -11,11 +11,13 @@ import java.awt.Color;
 public class Juego extends JPanel {
 Laberinto laberinto=new Laberinto();
 Personaje personaje = new Personaje();
+Bat bat = new Bat();
 	
 public void paint(Graphics grafico){
-    laberinto.paint(grafico);
+        laberinto.paint(grafico);
 	personaje.paint(grafico);
-	
+	bat.paint(grafico);
+		
   }
 	
  public static void main(String[] args) {   
