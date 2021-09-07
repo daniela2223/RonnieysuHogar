@@ -15,6 +15,7 @@ Araña araña = new Araña();
 Bat bat = new Bat();
 Caracol caracol = new Caracol();
 Objetos reloj = new Objetos();
+Estrella estrella = new Estrella();
 static int tiempo=200;
 static int tiempo=200;
 static int contadoraraña = 10;
@@ -29,6 +30,7 @@ public void paint(Graphics grafico){
 	bat.paint(grafico);
 	caracol.paint(grafico);
 	reloj.paint(grafico);
+	estrella.paint(grafico);
   }
 	
  public static void main(String[] args) {   
