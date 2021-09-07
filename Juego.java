@@ -9,14 +9,19 @@ import java.awt.Color;
 
 
 public class Juego extends JPanel {
-Laberinto laberinto=new Laberinto();
-Personaje personaje = new Personaje();
-Araña araña = new Araña();
-Bat bat = new Bat();
-Caracol caracol = new Caracol();
-Objetos reloj = new Objetos();
-Estrella estrella = new Estrella();
-Lago lago = new Lago();
+	
+  Laberinto laberinto=new Laberinto();
+  Personaje personaje = new Personaje();
+  Araña araña= new Araña();
+  Mosquito mosquito= new Mosquito();
+  Caracol caracol = new Caracol();
+  Bat bat = new Bat();
+  Objetos reloj = new Objetos();
+  Barras barra = new Barras();
+  Arbol arbol = new Arbol();
+  Lago lago = new Lago();
+  Estrella estrella = new Estrella();
+
 static int prueba = 4;
 static int p = 0;
 static int tiempo=200;
@@ -44,14 +49,17 @@ public Juego(){
   }
 	
 public void paint(Graphics grafico){
-        laberinto.paint(grafico);
-	personaje.paint(grafico);
-	araña.paint(grafico);
-	bat.paint(grafico);
-	caracol.paint(grafico);
-	reloj.paint(grafico);
-	estrella.paint(grafico);
-	lago.paint(grafico);
+    laberinto.paint(grafico);
+    personaje.paint(grafico);
+    araña.paint(grafico);
+    mosquito.paint(grafico);
+    caracol.paint(grafico);
+    bat.paint(grafico);
+    arbol.paint(grafico);
+    lago.paint(grafico);
+    barra.dibujarbarraderesistencia(grafico);
+    reloj.paint(grafico);
+    estrella.paint(grafico);
   }
 	
  public static void main(String[] args) {   
