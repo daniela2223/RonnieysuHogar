@@ -10,9 +10,12 @@ import java.awt.Color;
 
 public class Juego extends JPanel {
 Laberinto laberinto=new Laberinto();
+Personaje personaje = new Personaje();
 	
 public void paint(Graphics grafico){
     laberinto.paint(grafico);
+	personaje.paint(grafico);
+	
   }
 	
  public static void main(String[] args) {   
