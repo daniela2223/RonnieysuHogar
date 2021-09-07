@@ -16,6 +16,7 @@ Bat bat = new Bat();
 Caracol caracol = new Caracol();
 Objetos reloj = new Objetos();
 Estrella estrella = new Estrella();
+Lago lago = new Lago();
 static int prueba = 4;
 static int p = 0;
 static int tiempo=200;
@@ -33,6 +34,7 @@ public void paint(Graphics grafico){
 	caracol.paint(grafico);
 	reloj.paint(grafico);
 	estrella.paint(grafico);
+	lago.paint(grafico);
   }
 	
  public static void main(String[] args) {   
