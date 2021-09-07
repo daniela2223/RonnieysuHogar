@@ -12,11 +12,13 @@ public class Juego extends JPanel {
 Laberinto laberinto=new Laberinto();
 Personaje personaje = new Personaje();
 Bat bat = new Bat();
+Caracol caracol = new Caracol();
 	
 public void paint(Graphics grafico){
         laberinto.paint(grafico);
 	personaje.paint(grafico);
 	bat.paint(grafico);
+	caracol.paint(grafico);
 		
   }
 	
