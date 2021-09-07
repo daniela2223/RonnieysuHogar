@@ -14,6 +14,7 @@ Personaje personaje = new Personaje();
 Araña araña = new Araña();
 Bat bat = new Bat();
 Caracol caracol = new Caracol();
+Objetos reloj = new Objetos();
 static int tiempo=200;
 	
 public void paint(Graphics grafico){
@@ -22,7 +23,7 @@ public void paint(Graphics grafico){
 	araña.paint(grafico);
 	bat.paint(grafico);
 	caracol.paint(grafico);
-		
+	reloj.paint(grafico);
   }
 	
  public static void main(String[] args) {   
